@@ -45,8 +45,6 @@ Flag                                      | Description
 -N [number]                               | the length of training sequences
 -learningRate [number]                    | learning rate
 -initweights [file]                       | initial weights
--grid_[minX/maxX/minY/maxY/step] [number] | 2D occupancy grid parameters
--sensor_[start/step]                      | 1D depth sensor parameters
 
 License
 -------
