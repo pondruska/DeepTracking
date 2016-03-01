@@ -22,7 +22,7 @@ Data
 ----
 Download and unzip the training data for the simulated moving balls scenario:
 ```
-http://mrg.robots.ox.ac.uk:8080/MRGData/deeptracking/DeepTracking_1_0.dat.zip
+http://mrg.robots.ox.ac.uk:8080/MRGData/deeptracking/DeepTracking_1_0.t7.zip
 ```
 This is a native Torch 7 file format.
 
