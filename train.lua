@@ -25,6 +25,7 @@ require('lfs')
 require('nngraph')
 require('optim')
 require('image')
+require('SensorData')
 require('WeightedBCECriterion')
 require('Recurrent')
 
@@ -56,7 +57,8 @@ torch.setdefaulttensortype(DEFAULT_TENSOR_TYPE)
 
 -- load training data
 print('Loading training data from file ' .. params.data)
-data = torch.load(params.data) -- load pre-processed 2D grid sensor input
+--data = torch.load(params.data) -- load pre-processed 2D grid sensor input
+data = LoadSensorData(params.data, params)
 width  = (#data)[4] -- occupancy 2D grid width
 height = (#data)[3] -- occupancy 2D grid height
 print('Occupancy grid has size ' .. width .. 'x' .. height)

@@ -20,7 +20,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 -- h0
 function getInitialState(width, height)
-    return torch.zeros(16, height, width)
+    return torch.zeros(32, height, width)
 end
 
 -- One step of RNN --
@@ -29,10 +29,10 @@ function getStepModule(width, height)
 	local h0 = nn.Identity()()
 	local x1 = nn.Identity()()
 
-	local e  = nn.Sigmoid()( nn.SpatialConvolution(2, 8, 7, 7, 1, 1, 3, 3)(x1) )
+	local e  = nn.Sigmoid()( nn.SpatialConvolution(2, 16, 7, 7, 1, 1, 3, 3)(x1) )
 	local j  = nn.JoinTable(1)({e,h0})
-	local h1 = nn.Sigmoid()( nn.SpatialConvolution(24, 16, 5, 5, 1, 1, 2, 2)(j) )
-	local y1 = nn.Sigmoid()( nn.SpatialConvolution(16, 1, 7, 7, 1, 1, 3, 3)(h1) )
+	local h1 = nn.Sigmoid()( nn.SpatialConvolution(48, 32, 7, 7, 1, 1, 3, 3)(j) )
+	local y1 = nn.Sigmoid()( nn.SpatialConvolution(32, 1, 7, 7, 1, 1, 3, 3)(h1) )
 
 	return nn.gModule({h0, x1}, {h1, y1})
 end

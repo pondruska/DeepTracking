@@ -22,7 +22,7 @@ Data
 ----
 Download and unzip the training data for the simulated moving balls scenario:
 ```
-http://mrg.robots.ox.ac.uk:8080/MRGData/deeptracking/DeepTracking_1_0.t7.zip
+http://mrg.robots.ox.ac.uk:8080/MRGData/deeptracking/DeepTracking_1_1.t7.zip
 ```
 This is a native Torch 7 file format.
 
@@ -45,6 +45,8 @@ Flag                                      | Description
 -N [number]                               | the length of training sequences
 -learningRate [number]                    | learning rate
 -initweights [file]                       | initial weights
+-grid_[minX/maxX/minY/maxY/step] [number] | 2D occupancy grid parameters
+-sensor_[start/step]                      | 1D depth sensor parameters
 
 License
 -------
@@ -65,3 +67,6 @@ Release Notes
 -------------
 #### Version 1.0
 * Original version from the academic paper.
+#### Version 1.1
+* Native decoding of raw 1D depth data into 2D input.
+* Larger NN network.
