@@ -67,6 +67,7 @@ Release Notes
 -------------
 #### Version 1.0
 * Original version from the academic paper.
+
 #### Version 1.1
 * Native decoding of raw 1D depth data into 2D input.
 * Larger NN network.
