@@ -1,12 +1,13 @@
 DeepTracking: Seeing Beyond Seeing Using Recurrent Neural Networks
 ==================================================================
 This is an official Torch 7 implementation of the method for the end-to-end object tracking from occluded sensor measurements using neural network presented in the academic paper:
+
 [P. Ondruska and I. Posner, *"Deep Tracking: Seeing Beyond Seeing Using Recurrent Neural Networks"*, in The Thirtieth AAAI Conference on Artificial Intelligence (AAAI), Phoenix, Arizona USA, 2016.](http://www.robots.ox.ac.uk/~mobile/Papers/2016AAAI_ondruska.pdf)
 
-**author**: Peter Ondruska, *Mobile Robotics Group, University of Oxford*
-**email**: ondruska(at)robots.ox.ac.uk
-**paper**: http://www.robots.ox.ac.uk/~mobile/Papers/2016AAAI_ondruska.pdf
-**webpage**: http://mrg.robots.ox.ac.uk/
+* **author**: Peter Ondruska, *Mobile Robotics Group, University of Oxford*
+* **email**: ondruska(at)robots.ox.ac.uk
+* **paper**: http://www.robots.ox.ac.uk/~mobile/Papers/2016AAAI_ondruska.pdf
+* **webpage**: http://mrg.robots.ox.ac.uk/
 
 For any questions about the code or the method please contact the author.
 
